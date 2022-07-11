@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import  { useState } from "react";
 import './App.css';
 import question from "./1.gif";
 function App() {
@@ -11,9 +11,7 @@ function App() {
    setTips(data.activity);
   };
 
-  useEffect(() => {
-    fetchTips();
-  }, []);
+ 
 
   return (
     <div className="App">
