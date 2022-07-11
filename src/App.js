@@ -4,8 +4,7 @@ import question from "./1.gif";
 function App() {
   const [tips, setTips] = useState("");
 
-  const fetchTips = async (e) => {
-    e.preventDefault();
+  const fetchTips = async () => {
   const response = await fetch(`https://www.boredapi.com/api/activity/`);
    const data = await response.json();
    console.log(data.activity)
